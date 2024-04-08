@@ -1,0 +1,65 @@
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: large;
+
+  }
+
+  .Input-container{
+    font-size: x-large;
+    text-align: center;
+  }
+
+ 
+  .AddTaskForm,
+  .TaskList {
+    margin-bottom: 20px;
+  }
+  
+  .counters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  .counters span {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .TaskList-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .TaskList-item:last-child {
+    border-bottom: none;
+  }
+  
+  .TaskList-checkbox {
+    margin-right: 10px;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #797878;
+  }
+  
+  .TaskList-delete {
+    margin-left: auto;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  

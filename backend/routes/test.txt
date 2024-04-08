@@ -1,0 +1,28 @@
+POST: // Create
+
+http://localhost:5000/todos
+
+{
+  "text":"Buy car"
+}
+
+
+GET: // Read
+http://localhost:5000/todos
+
+
+PUT: // Update
+
+http://localhost:5000/todos/<id>
+
+{
+  "text":"Buy banana v2"
+}
+
+DELTE: // Delete
+
+http://localhost:5000/todos/<id>
+
+{
+  "text":"Buy banana v2"
+}
