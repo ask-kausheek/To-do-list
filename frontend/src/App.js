@@ -8,6 +8,7 @@ import AddTaskForm from './components/AddTaskForm';
 function App() {
 
   const [tasks, setTasks] = useState([]);
+  // To store the current count of done tasks
   const [undoneCount, setUndoneCount] = useState(
     localStorage.getItem('undoneCount') || 0
   );
@@ -35,7 +36,6 @@ function App() {
 
   const handleCheckboxChange = (id, done) => {
     axios.put(`http://localhost:4000/api/tasks/${id}`, { done: !done })
-    // console.log(${id})
       .then(() => {
         const updatedTasks = tasks.map(task => {
           if (task.id === id) {
